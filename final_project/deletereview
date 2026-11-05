@@ -1,0 +1,12 @@
+Command: curl.exe -i -b <bob-cookie-jar> -X DELETE "http://localhost:5000/customer/auth/review/1"
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-JtTV5/Y/edDhCQCUh0krXH+3A0o"
+Date: Thu, 05 Nov 2026 20:57:38 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Review deleted successfully."}

@@ -1,0 +1,4 @@
+Command: curl.exe --% -sS -X POST http://localhost:5000/register -H "Content-Type: application/json" --data-raw "{\"username\":\"curl-evidence-2026\",\"password\":\"test-password\"}"
+
+Response:
+{"message":"User successfully registered. Now you can login"}

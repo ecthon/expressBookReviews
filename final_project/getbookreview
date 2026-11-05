@@ -1,0 +1,12 @@
+Command: curl.exe -i http://localhost:5000/review/1
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Date: Thu, 05 Nov 2026 20:42:31 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{}
