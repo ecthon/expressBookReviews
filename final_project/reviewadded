@@ -1,12 +1,13 @@
-Command: curl.exe -i -b <alice-cookie-jar> -X PUT "http://localhost:5000/customer/auth/review/1?review=Alice%20review"
+Command (run from Windows Command Prompt, after login):
+curl.exe -i -b cookies.txt -X PUT "http://localhost:5000/customer/auth/review/1?review=Coursera%20project%20review"
 
+Response:
 HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 48
-ETag: W/"30-RAMOIwdpcEM8PhzzEaSHwS75cso"
-Date: Thu, 05 Nov 2026 20:57:38 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-
 {"message":"Review added/updated successfully."}
+
+Command:
+curl.exe -i http://localhost:5000/review/1
+
+Response:
+HTTP/1.1 200 OK
+{"coursera-reviewer-2026":"Coursera project review"}

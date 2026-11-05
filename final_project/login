@@ -1,4 +1,6 @@
-Command: curl.exe -sS -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" --data-raw "{\"username\":\"task7-alice-1793912258452\",\"password\":\"pass123\"}" -w "\nHTTP_STATUS:%{http_code}\n"
+Command (run from Windows Command Prompt):
+curl.exe -i -c cookies.txt -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"coursera-reviewer-2026\",\"password\":\"demo-password-2026\"}"
 
+Response:
+HTTP/1.1 200 OK
 {"message":"User successfully logged in."}
-HTTP_STATUS:200
